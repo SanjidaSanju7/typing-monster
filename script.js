@@ -87,12 +87,15 @@ const gameOver = () => {
 
   addHistory(questionText, timeTaken, errorCount);
 
+
   // restart everything
   startTime = null;
   errorCount = 0;
   userText = "";
   display.classList.add("inactive");
 };
+
+errorCount++;
 
 const closeModal = () => {
   modalBackground.classList.toggle("hidden");
