@@ -16,8 +16,9 @@
         <h2 class="mt-5 text-center text-primary ">Welcome To Our Blog Page</h2>
 
         <div class="accordion container mt-4 shadow-lg p-4 " id="accordionExample">
+            <!-- question 1 -->
             <div class="accordion-item">
-                <h2 class="accordion-header " id="headingOne ">
+                <h2 class="accordion-header" id="headingOne ">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <p class="fw-bold">What is the difference between Local Storage and Session Storage?</p>
@@ -40,7 +41,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- question 2 -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -48,7 +49,7 @@
                         <p class="fw-bold">What is the difference between Global Scope and Block Scope?</p>
                     </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse aria-labelledby=" headingTwo"
+                <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         JavaScript ES6 has different ways to declare and use variables. This often leds to confusion
@@ -56,25 +57,25 @@
                         which keyword.In order to know which keyword to use we must first know about the scope in
                         javascript.As the name says it 'scope' means which variable is accessible and upto which point
                         it is accessible. So, in javascript the whole document is global scope and all the other
-                        functions and variables are contained in this global scope.
-                        Another is the Local Scope, variables declared inside the functions are considered to be of the
-                        local scope and it is futher divided into function scoped and block scoped.<br>
+                        functions and variables are contained in this global scope. Another is the Local Scope,
+                        variables declared inside the functions are considered to be of the local scope and it is futher
+                        divided into function scoped and block scoped. <br>
                         Function Scope: When a variable is declared inside a function, it is only accessible within that
                         function and cannot be used outside that function.<br>
                         Block Scope: A variable when declared inside the if or switch conditions or inside for or while
                         loops, are accessible within that particular condition or loop. To be consise the variables
-                        declared inside the curly braces are called as within block scope. <br> Coming back to the use
+                        declared inside the curly braces are called as within block scope. Coming back to the use
                         of keywords,
                         var is called as function scope that is if a variable is declared using var keyword it will be
-                        accessible throughout the function.
-                        let & const are also called as block scope that is they are accessible within that particular
-                        block. Here let is used for variable which can be changed as we proceed through the program
+                        accessible throughout the function.let & const are also called as block scope that is they are
+                        accessible within that particular block. Here let is used for variable which can be changed as
+                        we proceed through the program
                         whereas const is used for a variable which does not change till the program ends, that is it
                         remains constant throughout the program.
                     </div>
                 </div>
             </div>
-
+            <!-- question 3 -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -96,7 +97,7 @@
                     </div>
                 </div>
             </div>
-
+            <!-- question 4 -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -107,7 +108,13 @@
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        .....
+                        Undefined is a primitive value in JavaScript. A variable or an object has an undefined
+                        value when no value is assigned before using it. So you can say that undefined means lack of
+                        value or unknown value. <br>
+                        You will get undefined value when you call a non-existent property or method of an object.
+                        If you pass less arguments in function call then, that parameter will have undefined value.
+                        If parameter that is nothing on the right side will return undefined.
+                        Accessing array elements outside of the index range can find undefined.
                     </div>
                 </div>
             </div>

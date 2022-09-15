@@ -24,12 +24,11 @@ const typeController = (e) => {
   const newLetter = e.key;
 
   // Handle backspace press
+
   if (newLetter == "Backspace") {
     userText = userText.slice(0, userText.length - 1);
-
     return display.removeChild(display.lastChild);
   }
-  errorCount++;
 
   // these are the valid character we are allowing to type
   const validLetters =
@@ -48,6 +47,7 @@ const typeController = (e) => {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+    errorCount++;
   }
 
   // check if given question text is equal to user typed text
@@ -55,6 +55,8 @@ const typeController = (e) => {
     gameOver();
   }
 };
+
+
 
 const validate = (key) => {
   if (key === questionText[userText.length - 1]) {
@@ -96,7 +98,6 @@ const gameOver = () => {
   userText = "";
   display.classList.add("inactive");
 };
-
 
 
 const closeModal = () => {
